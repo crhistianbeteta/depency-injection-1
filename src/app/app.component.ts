@@ -4,6 +4,7 @@ import { UseClassMainComponent } from './useClass/use-class-main/use-class-main.
 import { UseExistingMainComponent } from './useExisting/use-class-main/use-existing-main.component';
 import { UseValueMainComponent } from './useValue/use-value-main/use-value-main.component';
 import { UseFactoryMainComponent } from './useFactory/use-factory-main/use-factory-main.component';
+import { MessageCreatorsMainComponent } from './injection-token/components/message-creator-cards-main/logger-cards-main.component';
 
 @Component({
   selector: 'app-root',
@@ -13,12 +14,14 @@ import { UseFactoryMainComponent } from './useFactory/use-factory-main/use-facto
     UseClassMainComponent,
     UseExistingMainComponent,
     UseValueMainComponent,
-    UseFactoryMainComponent],
+    UseFactoryMainComponent,
+    MessageCreatorsMainComponent],
   template: `
-  <app-use-class-main></app-use-class-main>
-  <app-use-existing-main></app-use-existing-main>
-  <app-use-value-main></app-use-value-main>
-  <app-use-factory-main></app-use-factory-main>
+  <app-use-class-main/>
+  <app-use-existing-main/>
+  <app-use-value-main/>
+  <app-use-factory-main/>
+  <app-message-creators-main/>
   `,
 
 
